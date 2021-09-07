@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import colorData from "../data/color-data.json";  // colorData is local (this module) binding assigned to object within .json file
 import ColorList from "./ColorList.js";
 
 
 // state for entire app's component tree is stored in this single root component 
-export default function App() {
+export default function App({ colorData }) {
     const [colors, setColors] = useState(colorData);
     return (
         <ColorList 

@@ -17,10 +17,10 @@ export default function StarRating({
                 (_value, index) => (
                     <Star 
                         key={index} 
-                        selected={selectedStars>i}  // selected attribe for Star component is true if Star 0-index is less than value of selectedStars variable
-                        onSelect={() => onRate(i+1)} // i+1 is the new rating value
+                        selected={selectedStars>index}  // selected attribe for Star component is true if Star 0-index is less than value of selectedStars variable
+                        onSelect={() => onRate(index+1)} // index+1 is the new rating value
                     />  
-            ))};
+            ))}
             <p>
                 {selectedStars} of {totalStars} stars
             </p>
