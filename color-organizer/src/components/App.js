@@ -39,6 +39,6 @@ export default function App() {
                     setColors(newColors);  // update of state variable invokes App function and re-renders UI
                 }}
             />
-        />
+        </>
     );
 }

@@ -23,7 +23,7 @@ module.exports = {
     devtool: "source-map",  // enables source mapping
     devServer: {
         static: './dist/assets',
-        allowedHosts: ["3000-olive-wasp-mlwdq9nf.ws-us15.gitpod.io"],
+        allowedHosts: "all",
         port: 3000,
     },
 };
